@@ -1,3 +1,6 @@
+import { logOut } from '../../services/index.js';
+import { onNavigate } from '../../utils/history.js';
+
 export const Post = () => {
   const post = document.createElement('div');
   post.classList.add('div-post');
@@ -77,6 +80,22 @@ export const Post = () => {
     e.preventDefault();
     creatPost();
     obtainPost();
+  });
+
+  const ppost = post.querySelector('#profile');
+  ppost.addEventListener('click', () => {
+    onNavigate('/profile');
+  });
+  const leave = post.querySelector('#logOut');
+  leave.addEventListener('click', () => {
+    logOut()
+      .then(() => {
+        onNavigate('/');
+      })
+      .catch(() => {
+        const error = 'Não conseguimos deslogar, por gentileza tentar novamente';
+        alert(error);
+      });
   });
 
   return post;
