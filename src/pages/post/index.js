@@ -2,9 +2,15 @@ export const Post = () => {
   const post = document.createElement('div');
   post.classList.add('div-post');
   post.innerHTML = `
-  <div class='header-container'>
-    <figure class='logo'><img src='./assets/logo/runners-360px.png' alt='Logo Runners' id='logo'></figure>
-  </div>
+  <header class="header">
+  <img src='./assets/logo/runners-40px.png' alt='Logo Runners' id='logo' class="logo"></a>
+  <input class="menu-btn" type="checkbox" id="menu-btn" />
+  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+  <ul class="menu">
+    <li id='profile'><a href="#">Perfil</a></li>
+    <li id='logOut'><a href="#">Sair</a></li>
+  </ul>
+</header>
   <div class="container">
     <section>
       <form id='form-container'>
