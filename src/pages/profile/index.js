@@ -54,6 +54,8 @@ export const Profile = () => {
 
   const del = profile.querySelector('#deleteuser');
   const msgError = profile.querySelector('#msgError');
+  const post = profile.querySelector('#cancelbtn');
+  const btnLogout = profile.querySelector('#logOut');
 
   del.addEventListener('click', () => {
     delUser()
@@ -66,13 +68,9 @@ export const Profile = () => {
       });
   });
 
-  const post = profile.querySelector('#cancelbtn');
-
   post.addEventListener('click', () => {
     onNavigate('/post');
   });
-
-  const btnLogout = profile.querySelector('#logOut');
 
   btnLogout.addEventListener('click', () => {
     logOut()
