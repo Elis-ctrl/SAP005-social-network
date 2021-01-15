@@ -12,8 +12,6 @@ export const Profile = () => {
     <input class="menu-btn" type="checkbox" id="menu-btn" />
     <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
     <ul class="menu">
-      <li id='post'><a href="#">Post</a></li>
-      <li id='profile'><a href="#">Perfil</a></li>
       <li id='logOut'><a href="#">Sair</a></li>
     </ul>
   </header>
@@ -27,7 +25,7 @@ export const Profile = () => {
     <hr />
     <div>
       <input class='button' id='deleteuser' type='submit' value="Apagar Conta" /> 
-      <input class='button' id='cancelbtn' type='submit' value="Voltar" />
+      <input class='button' id='cancelbtn' type='submit' value="Página Inicial" />
     </div>
     <footer>
       <p>
