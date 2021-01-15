@@ -3,7 +3,7 @@ import { onNavigate } from '../../utils/history.js';
 
 export const Register = () => {
   const register = document.createElement('div');
-  register.classList.add('form-container');
+  register.classList.add('container');
   register.innerHTML = `
   <div class='form-login'>
   <div class='header-container'>
@@ -37,8 +37,13 @@ export const Register = () => {
     </div>
   </div>
 </div>
+
+<div><input class="button" id='btnRegister' type="submit" value="Cadastre-se"/></div>
+
+
 <div><input class="button" id='btnRegister' type="submit" value="Cadastre-se"/>
 </div>
+
   `;
 
   const btnRegister = register.querySelector('#btnRegister');

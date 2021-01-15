@@ -31,7 +31,7 @@ export const Post = () => {
               <h2 class='name'>${infUser.displayName}</h2>
               <p class='text'>${textSave}</p>
               <div class='btn'>
-              <button id='like'>Curtir <p id='show-like'>❤️</p></button>
+              <button id='like'><p id='show-like'>❤️</p></button>
               </div>
             </div>
     `;
