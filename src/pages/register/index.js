@@ -40,10 +40,6 @@ export const Register = () => {
 
 <div><input class="button" id='btnRegister' type="submit" value="Cadastre-se"/></div>
 
-
-<div><input class="button" id='btnRegister' type="submit" value="Cadastre-se"/>
-</div>
-
   `;
 
   const btnRegister = register.querySelector('#btnRegister');
@@ -75,7 +71,7 @@ export const Register = () => {
               alert('Cadastro realizado com sucesso!');
             })
             .then(() => {
-              onNavigate('/profile');
+              onNavigate('/post');
             })
             .catch((error) => {
               const errormsg = error.message;

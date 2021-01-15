@@ -44,7 +44,7 @@ export const confirmEmail = () => {
 export const currentUser = () => firebase.auth().currentUser;
 
 // Excluir um usuário
-export const delUser = () => firebase.firestore().user.delete();
+export const delUser = () => firebase.firestore().delete;
 
 //   UID
 export const userId = () => {

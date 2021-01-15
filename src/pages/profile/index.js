@@ -60,7 +60,7 @@ export const Profile = () => {
   del.addEventListener('click', () => {
     delUser()
       .then(() => {
-        onNavigate('/home');
+        onNavigate('/');
       })
       .catch((error) => {
         const alert = error.message;
