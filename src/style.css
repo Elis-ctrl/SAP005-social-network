@@ -249,6 +249,20 @@ Limpando a row para ajustar a altura dos elementos filhos */
 }
 
 /* Register Page */
+img#logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+textarea#newPost {
+  padding: 25%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
 p.register {
 text-align: center;
 color: #5e5e5e;
@@ -256,6 +270,29 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 font-size: x-small;
 }
 
+button#btn.btn {
+  width: 25%;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #00456f;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+img#photo {
+  border-radius: 10px;
+  border: 1px solid black;
+  margin: 15px;
+}
+
+h2.name {
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 /* .footer {
   position: relative;
   z-index: 1;
@@ -266,6 +303,27 @@ font-size: x-small;
 .footer a {
   color: #e1a70a;
 } */
+
+/* Post page */
+textarea#newPost {
+  padding: 25%;
+  margin-left: 32px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+p.text {
+  margin: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  border: 1px solid black;
+  padding: 20px;
+}
+
+button#like {
+  margin: 15px;
+  padding: 10px;
+}
 
 @media (min-width:320px) and (max-width:600px) {
   .form_login .col_half {
