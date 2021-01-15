@@ -12,7 +12,7 @@ a {
 }
 a:hover {
   text-decoration: underline;
-  color: #a11212;
+  color: #0c8d21;
 }
 hr {
   border: 0; 
@@ -244,10 +244,6 @@ font-size: x-small;
 }
 
 /* Profile Page */
-.logo-peq {
-float:left;
-width: 30%;
-}
 
 .page-logo {
 display: flex;
@@ -290,16 +286,11 @@ clip-path: circle(50% at 50% 50%);
   width: 40px;
 }
 
-.img-header {
-  padding: 0 15px;
-  width: 50px;
-}
-
 .img-profile-post {
   width: 50px;
 }
 
-/* MENU */
+/* MENU DO TOPO */
 
 /* header */
 
@@ -413,6 +404,12 @@ clip-path: circle(50% at 50% 50%);
   top: 0;
 }
 
+/* Profile Button: deleteuser */
+
+.container input[id=deleteuser]:hover {
+  background: #cf0000;
+}
+
 /*  footer   */
 footer {
   background-color: #222;
@@ -445,24 +442,6 @@ footer a {
 footer a:hover {
   color: #fff;
 }
-
-
-
-
-
-
-
-
-/* .footer {
-  position: relative;
-  z-index: 1;
-  text-align: center;
-  padding: 15px;
-  color: #f5ba1a;
-}
-.footer a {
-  color: #e1a70a;
-} */
 
 @media (min-width:320px) and (max-width:600px) {
   .form_login .col_half {
