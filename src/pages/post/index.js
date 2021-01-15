@@ -2,14 +2,13 @@ export const Post = () => {
   const post = document.createElement('div');
   post.classList.add('div-post');
   post.innerHTML = `
-  <header class='head-post' alt='Runner|Home'>Runner|Home</header>
-  <figure class='logo-post'>
-    <img src='./assets/logo_runners.png' alt='Logo Runners' id='logo'>
-  </figure>
+  <div class='header-container'>
+    <figure class='logo'><img src='./assets/logo/runners-360px.png' alt='Logo Runners' id='logo'></figure>
+  </div>
   <div class="container">
     <section>
       <form id='form-container'>
-        <input type='textarea' class='post' id='newPost'/>
+        <textarea class='post' id='newPost'></textarea>
         <button type='button' class='btn' id='btn'>Postar</button>
       </form>
     </section>  
@@ -29,17 +28,10 @@ export const Post = () => {
     postContent.innerHTML += `
             <div class='post-card'>
             <img src='${infUser.photoURL || '../../assets/Photo_Default.png'}' alt='Imagem do Usuario' id='photo'>
-              <h2>${infUser.displayName}</h2>
-              <p>${textSave}</p>
-              <div class=''>
-              <button id='like'>Curtir <p id='show-like'> ❤️</p></button>
-              <button id='delete'>Deletar</button>
-              <button id='editar'>Editar</button>
-              </div>
-              <div class='coment'>
-                <hr>
-                <textarea class'text-comment'></textarea>
-                <button>Enviar</button>
+              <h2 class='name'>${infUser.displayName}</h2>
+              <p class='text'>${textSave}</p>
+              <div class='btn'>
+              <button id='like'><p id='show-like'>❤️</p></button>
               </div>
             </div>
     `;
