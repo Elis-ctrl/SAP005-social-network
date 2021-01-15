@@ -2,7 +2,7 @@ import { onNavigate } from '../../utils/history.js';
 
 export const Home = () => {
   const home = document.createElement('div');
-  home.classList.add('form-container');
+  home.classList.add('container');
   home.innerHTML = `
   <div class='form-login'>
   <div class='header-container'>

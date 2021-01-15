@@ -48,7 +48,7 @@ Limpando a row para ajustar a altura dos elementos filhos */
   visibility: hidden;
   height: 0;
 }
-.form-container {
+.container {
   background: #fff;
   width: 550px;
   max-width: 100%;
@@ -62,37 +62,37 @@ Limpando a row para ajustar a altura dos elementos filhos */
   -moz-box-shadow: 0 0 3px #0000001a;
   box-shadow: 0 0 3px #0000001a;
 }
-.form-container h2 {
+.container h2 {
   font-size: 1.5em;
   line-height: 1.5em;
   margin: 0;
 }
-.form-container .header-container {
-  text-align: center;
-  padding-bottom: 15px;
-}
-.form-container h3 {
+.container h3 {
   font-size: 1.1em;
   font-weight: normal;
   line-height: 1.5em;
   margin: 0;
 }
-.form-container .row {
+.container .header-container {
+  text-align: center;
+  padding-bottom: 15px;
+}
+.container .row {
   margin: 20px -15px;
 }
-.form-container .row > div {
+.container .row > div {
   padding: 0 15px;
   box-sizing: border-box;
 }
-.form-container .col_half {
+.container .col_half {
   width: 50%;
   float: left;
 }
-.form-container .input_field {
+.container .input_field {
   position: relative;
   margin-bottom: 20px;
 }
-.form-container .input_field > span {
+.container .input_field > span {
   position: absolute;
   left: 0;
   top: 0;
@@ -102,13 +102,13 @@ Limpando a row para ajustar a altura dos elementos filhos */
   text-align: center;
   width: 30px;
 }
-.form-container .input_field > span > i {
+.container .input_field > span > i {
   padding-top: 10px;
 }
-.form-container .textarea_field > span > i {
+.container .textarea_field > span > i {
   padding-top: 10px;
 }
-.form-container input[type=text] {
+.container input[type=text] {
   width: 100%;
   padding: 8px 10px 9px 35px;
   height: 35px;
@@ -121,13 +121,13 @@ Limpando a row para ajustar a altura dos elementos filhos */
   -ms-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-.form-container input[type=text]:focus {
+.container input[type=text]:focus {
   -webkit-box-shadow: 0 0 2px 1px #095885;
   -moz-box-shadow: 0 0 2px 1px #095885;
   box-shadow: 0 0 2px 1px #095885;
   border: 1px solid #095885;
 }
-.form-container input[type=email] {
+.container input[type=email] {
   width: 100%;
   padding: 8px 10px 9px 35px;
   height: 35px;
@@ -140,13 +140,13 @@ Limpando a row para ajustar a altura dos elementos filhos */
   -ms-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-.form-container input[type=email]:focus {
+.container input[type=email]:focus {
   -webkit-box-shadow: 0 0 2px 1px #095885;
   -moz-box-shadow: 0 0 2px 1px #095885;
   box-shadow: 0 0 2px 1px #095885;
   border: 1px solid #095885;
 }
-.form-container input[type=password] {
+.container input[type=password] {
   width: 100%;
   padding: 8px 10px 9px 35px;
   height: 35px;
@@ -159,13 +159,13 @@ Limpando a row para ajustar a altura dos elementos filhos */
   -ms-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-.form-container input[type=password]:focus {
+.container input[type=password]:focus {
   -webkit-box-shadow: 0 0 2px 1px #095885;
   -moz-box-shadow: 0 0 2px 1px #095885;
   box-shadow: 0 0 2px 1px #095885;
   border: 1px solid #095885;
 }
-.form-container input[type=submit] {
+.container input[type=submit] {
   background: #3b5ca1;
   height: 35px;
   line-height: 35px;
@@ -182,10 +182,10 @@ Limpando a row para ajustar a altura dos elementos filhos */
   -ms-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-.form-container input[type=submit]:hover {
+.container input[type=submit]:hover {
   background: #0c8d21;
 }
-.form-container input[type=submit]:focus {
+.container input[type=submit]:focus {
   background: #314d87;
 }
 .form-login .row .col_half.last {
@@ -243,6 +243,214 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 font-size: x-small;
 }
 
+/* Profile Page */
+.logo-peq {
+float:left;
+width: 30%;
+}
+
+.page-logo {
+display: flex;
+overflow: hidden;
+float: left;
+padding: 14px 16px;
+position: relative;
+}
+.page-logo:after {
+display: block;
+margin: 10px;
+flex: 999 999 auto;
+}
+.img .page-logo{
+  width: 100px; 
+  padding-top: 100px;
+}  
+.item {
+  flex: 1 1 auto;
+  margin: 10px;
+}
+
+.img-profile-change,
+.img-profile-post,
+.img-profile-comment,
+.img-profile {
+clip-path: circle(50% at 50% 50%);
+}
+
+.img-profile-change {
+  margin: 25px 0 17px;
+  width: 160px;
+}
+
+.img-profile {
+  width: 50px;
+}
+
+.img-profile-comment {
+  width: 40px;
+}
+
+.img-header {
+  padding: 0 15px;
+  width: 50px;
+}
+
+.img-profile-post {
+  width: 50px;
+}
+
+/* MENU */
+
+/* header */
+
+.form-login header {
+  background-color: #fff;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  border-right: 1px solid #f4f4f4;
+  text-decoration: none;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: #f4f4f4;
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/*  footer   */
+footer {
+  background-color: #222;
+  color: #fff;
+  font-size: 14px;
+  bottom: 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 999;
+}
+
+footer p {
+  margin: 10px 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+footer .fa-heart {
+  color: red;
+}
+footer .fa-dev {
+  color: #ffe521;
+}
+footer a {
+  color: #678491;
+  text-decoration: none;
+  margin-right: 5px;
+}
+footer a:hover {
+  color: #fff;
+}
+
+
+
+
+
+
 
 
 /* .footer {
@@ -271,4 +479,11 @@ font-size: x-small;
     border-left: none;
     width: 50%;
   }
+  .floatRight {
+    float: left;
+ }
+ .floatLeft {
+    float: right;
+ }
 }
+
