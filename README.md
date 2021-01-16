@@ -43,6 +43,7 @@ Com base nos resultados da pesquisa, desenvolvemos uma aplicação focada em sma
 Esse dado nos mostrou que a esmagadora maioria dos usuários, acessa suas redes sociais pelo smartphone.
 
 **Interesse em uma nova rede de nicho**
+
 Com os dados abaixo, pudemos verificar um interesse considerável das pessoas em cuidar melhor da sua saúde e forma física, pois, a maioria tem o hábito de pesquisar sobre esportes e saúde no geral
 
 ![](/src/readme-images/pesquisa-002.png)
