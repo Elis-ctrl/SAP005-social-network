@@ -49,6 +49,7 @@ Com os dados abaixo, pudemos verificar um interesse considerável das pessoas em
 ![](/src/readme-images/pesquisa-002.png)
 
 **Hábitos**
+
 Os dados também revelam que a maioria teria interesse em compartilhar seus hábitos esportivos com outras pessoas.
 
 ![](/src/readme-images/pesquisa-003.png)
