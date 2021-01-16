@@ -1,29 +1,28 @@
-import { logOut } from '../../services/index.js';
-import { onNavigate } from '../../utils/history.js';
-
 export const Post = () => {
   const post = document.createElement('div');
   post.classList.add('div-post');
   post.innerHTML = `
+<div class='container'>
   <header class="header">
-  <img src='./assets/logo/runners-40px.png' alt='Logo Runners' id='logo' class="logo"></a>
-  <input class="menu-btn" type="checkbox" id="menu-btn" />
-  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-  <ul class="menu">
-    <li id='profile'><a href="#">Perfil</a></li>
-    <li id='logOut'><a href="#">Sair</a></li>
-  </ul>
-</header>
-  <div class="container">
+    <img src='./assets/logo/runners-40px.png' alt='Logo Runners' id='logo' class="logo"></a>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+    <ul class="menu">
+      <li id='logOut'><a href="#">Sair</a></li>
+    </ul>
+  </header>
+  <div class="form-login">
+    <hr />
     <section>
-      <form id='form-container'>
+      <form>
         <textarea class='post' id='newPost'></textarea>
-        <button type='button' class='btn' id='btn'>Postar</button>
+        <hr />
+        <button type='button' class='btnn' id='btn'>Postar</button>
       </form>
-    </section>  
+    </section>
   </div>
-  <hr/>
-  <div class='' id='post-content'></div>
+</div>
+<div class='' id='post-content'></div>
     
 `;
 
@@ -39,9 +38,7 @@ export const Post = () => {
             <img src='${infUser.photoURL || '../../assets/Photo_Default.png'}' alt='Imagem do Usuario' id='photo'>
               <h2 class='name'>${infUser.displayName}</h2>
               <p class='text'>${textSave}</p>
-              <div class='btn'>
               <button id='like'><p id='show-like'>❤️</p></button>
-              </div>
             </div>
     `;
   };
@@ -72,7 +69,7 @@ export const Post = () => {
         });
       })
       .catch((error) => {
-        alert('Error getting documents: ', error);
+        console.log('Error getting documents: ', error);
       });
   };
 
@@ -80,22 +77,6 @@ export const Post = () => {
     e.preventDefault();
     creatPost();
     obtainPost();
-  });
-
-  const ppost = post.querySelector('#profile');
-  ppost.addEventListener('click', () => {
-    onNavigate('/profile');
-  });
-  const leave = post.querySelector('#logOut');
-  leave.addEventListener('click', () => {
-    logOut()
-      .then(() => {
-        onNavigate('/');
-      })
-      .catch(() => {
-        const error = 'Não conseguimos deslogar, por gentileza tentar novamente';
-        alert(error);
-      });
   });
 
   return post;

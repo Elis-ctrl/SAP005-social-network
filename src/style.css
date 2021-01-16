@@ -38,6 +38,37 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+/* BOTÃO DE POST */
+.btnn {
+  background: #3b5ca1;
+  height: 35px;
+  line-height: 35px;
+  width: 100%;
+  flex-wrap: wrap;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.btnn:focus {
+  -webkit-box-shadow: 0 0 2px 1px #095885;
+  -moz-box-shadow: 0 0 2px 1px #095885;
+  box-shadow: 0 0 2px 1px #095885;
+  border: 1px solid #095885;
+}
+
+.btnn:hover{
+  background: #0c8d21;
+}
+
+
 /* Clearfix
 Limpando a row para ajustar a altura dos elementos filhos */
 
@@ -244,7 +275,7 @@ img#logo{
 
 
 textarea#newPost {
-  padding: 25%;
+  padding: 10%;
   display: block;
   margin-left: auto;
   margin-right: auto
@@ -482,12 +513,12 @@ footer a:hover {
 }
 
 /* Post page */
-textarea#newPost {
+/* textarea#newPost {
   padding: 25%;
   margin-left: 32px;
   margin-top: 20px;
   margin-bottom: 20px;
-}
+} */
 
 p.text {
   margin: 10px;
@@ -517,11 +548,4 @@ button#like {
     border-left: none;
     width: 50%;
   }
-  .floatRight {
-    float: left;
- }
- .floatLeft {
-    float: right;
- }
-}
-
+} 
