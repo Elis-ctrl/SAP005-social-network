@@ -37,22 +37,20 @@ Para atendermos as necessidades dos usuários, começamos nosso planejamento com
 Com base nos resultados da pesquisa, desenvolvemos uma aplicação focada em smartphones.
 
 **Plataforma de preferência**
-Gráfico de respostas do Formulários Google. Título da pergunta: Por onde você costuma acessar essas redes sociais?. Número de respostas: 34 respostas.
-![](/src/img/readme-img/pesquisa-idade.png)
+
+![](/src/readme-images/pesquisa-001.png)
 
 Esse dado nos mostrou que a esmagadora maioria dos usuários, acessa suas redes sociais pelo smartphone.
 
 **Interesse em uma nova rede de nicho**
 Com os dados abaixo, pudemos verificar um interesse considerável das pessoas em cuidar melhor da sua saúde e forma física, pois, a maioria tem o hábito de pesquisar sobre esportes e saúde no geral
 
-**Gráfico de respostas do Formulários Google. Título da pergunta: Você tem o habito de procurar sobre saúde, rotina, esporte e alimentação, esse seria um tema do seu cotidiano?. Número de respostas: 34 respostas.**
-
-![](/src/img/readme-img/pesquisa-plataforma.png)
+![](/src/readme-images/pesquisa-002.png)
 
 **Hábitos**
 Os dados também revelam que a maioria teria interesse em compartilhar seus hábitos esportivos com outras pessoas.
 
-**Gráfico de respostas do Formulários Google. Título da pergunta: Você tem o habito de procurar sobre saúde, rotina, esporte e alimentação, esse seria um tema do seu cotidiano?. Número de respostas: 34 respostas.**
+![](/src/readme-images/pesquisa-003.png)
 ### 2.3 Histórias
 Escolhemos 3 (três) histórias diferentes para atingir o máximo de usuários possível:
 
@@ -66,17 +64,17 @@ Escolhemos 3 (três) histórias diferentes para atingir o máximo de usuários p
 
 :writing_hand:	**História de Usuário #3**
 * Receber curtidas em minhas postagens.
+
 ### 2.4 Tarefas
 Para conseguir atender as necessidades dos usuários, efetuamos todo o nosso planejamento pelo 
 **[Git Hub Projects](https://github.com/crismantovani/SAP005-social-network/projects)**:
 
-#INSERIR IMAGEM
-
+![](/src/readme-images/git_projects.png)
 ---
 ## 3. Wireframe
 O fluxo da Runners foi baseado nas necessidades de nossos usuários e chegamos à este **[Wireframe](https://whimsical.com/social-network-mobile-TURow25acLztTDojtv8Lju)**.
 
-##INSERIR WIREFRAME
+![](/src/readme-images/wireframe.PNG)
 ---
 ## 4. Funcionalidades
 A Runners conta com as seguintes funcionalidades:
@@ -89,7 +87,7 @@ A Runners conta com as seguintes funcionalidades:
 - [x] Página de posts;
 - [x] Opção de curtir postagens;
 ---
-## 8. Desenvolvedoras
+## 5. Desenvolvedoras
 Runners é orgulhosamente desenvolvido por [Cris Mantovani](https://github.com/crismantovani "Cris Mantovani GitHub"), [Elis Brasil](https://github.com/elis-ctrl "Elis Brasil GitHub") e [Luciana Pereira](https://github.com/Lu-Pereira "Luciana Pereira GitHub") Alunas da turma SAP-005 da [<Laboratória>](https://www.laboratoria.la/br "Laboratória Brasil") :yellow_heart:.
 
 :mortar_board:	Este projeto foi o segundo desafio do bootcamp e nos ensinou sobre:
