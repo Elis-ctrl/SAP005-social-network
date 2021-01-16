@@ -1,44 +1,97 @@
-# Criando uma Rede Social
+# Runners
 
-## Índice
+Seja bem vindo (a) Runners
 
-- [1. Prefácio](#1-prefácio)
-- [2. Resumo do projeto](#2-resumo-do-projeto)
-- [3. Objetivos de aprendizagem](#3-objetivos-de-aprendizagem)
-- [4. Considerações gerais](#4-considerações-gerais)
-- [5. Critérios de aceitação mínimos do
-  projeto](#5-critérios-de-aceitação-mínimos-do-projeto)
-- [6. Hacker edition](#6-hacker-edition)
-- [7. Entrega](#7-entrega)
-- [8. Guias, dicas e leituras
-  complementares](#8-guias-dicas-e-leituras-complementares)
+A Runners é uma rede social que te conecta com outros corredores pelo mundo.
+Compartilhe suas corridas e metas alcançadas.
+
+**[Acesse a Runners](https://rede-social-2c561.web.app/ "Acesse o site")** 
+![](/src/img/favicons/favicon-16x16.png)
+
+## :page_facing_up: Índice
+
+* [1. Objetivos](#1-objetivos)
+* [2. Usuários](#2-usuários)
+    * [2.2 Pesquisas](#22-pesquisas)
+    * [2.3 Histórias de Usuários](#23-histórias)
+* [3. Planejamento](#3-planejamento)
+* [4. Desenvolvimento](#4-desenvolvimento)
+* [5. Funcionalidades](#5-funcionalidades)
+* [5.2 Linguagens](#52-linguagens)
+* [5.3 Ferramentas](#53-ferramentas)
+* [6. Testes](#6-testes)
+* [7. Requisitos](#7-requisitos)
+     * [7.2 Softwares](#72-softwares)
+     * [7.3 Execução](#73-execução)
+* [8. Desenvolvedoras](#8-desenvolvedoras)
 
 ---
 
-## 1. Prefácio
+## 1. Objetivos
+Ao iniciarmos o projeto nos preocupamos em entregar o seguinte:
 
-Instagram, Snapchat, Twitter, Facebook, Twitch, Linkedin, etc. As redes sociais
-invadiram nossas vidas. Nós as amamos ou odiamos, e muitas pessoas não conseguem
-viver sem elas.
+* Conhecer o usuário e entender suas necessidades;
+* Foco na experiência do usuário;
+* Planejamento do projeto pelo GitHub Projects;
+* Responsividade aplicando o conceito de Mobile First.
+## 2. Planejamento
 
-Há redes sociais de todo tipo para todos os tipos de interesse. Por exemplo: em
-uma rodada de financiamento com investidores, foi apresentada uma rede social
-para químicos onde os usuários podem publicar artigos a respeito de suas
-pesquisas, comentar os artigos de seus colegas e filtrar artigos de acordo com
-determinadas tags ou popularidade, mais recente ou mais comentado.
+Para atendermos as necessidades dos usuários de forma plena, começamos nosso planejamento com uma pesquisa para identificar as prioridades.
 
-## 2. Resumo do projeto
 
-Neste projeto você construirá uma Rede Social sobre o que você e sua equipe
-decidirem. Pode ser, por exemplo, sobre alimentação saudável, feminismo,
-educação, saúde, energias renováveis, amantes das
-[Empanadas](https://pt.wikipedia.org/wiki/Empanada), de
-[Tacos](<https://pt.wikipedia.org/wiki/Taco_(culin%C3%A1ria)>), de
-[Feijoada](https://pt.wikipedia.org/wiki/Feijoada), ou do que seja.
+### 2.2 Pesquisas
+Os resultados da pesquisa foram cruciais para desenvolvermos a melhor aplicação, focada em responsabilidade, acessibilidade, interatividade, disposição de dados, etc.
+A pesquisa foi determinante para nos dar um norte sobre o perfil da maioria de nossos usuários:
 
-Sua Rede Social terá que permitir à qualquer usuário criar uma conta de acesso,
-logar-se com ela, criar, editar, deletar e dar _likes_ em publicações.
+**Média de idade**
 
+![](/src/img/readme-img/pesquisa-idade.png)
+
+Esse dado nos mostrou que a mais da metade de nossos usuários tem 45 anos ou mais, enquanto  ⅓ tem de 21 a 40 anos. Os demais grupos se fragmentaram em partes bem menores, o que faz com que eles não gerem demanda suficiente para viabilizar o desenvolvimento de um site adequado ao perfil informado.
+
+**Plataforma em que mais joga**
+
+![](/src/img/readme-img/pesquisa-plataforma.png)
+
+Esse resultado mostra que mesmo o usuário podendo selecionar várias respostas, a plataforma mais utilizada é de Celular ou Tablet.
+Isso nos mostrou que um site responsivo deveria ser uma de nossas prioridades neste projeto.
+
+**Relacionamento com Pokémon Go**
+
+![](/src/img/readme-img/pesquisa-relacionamento.png)
+
+Podemos observar que a maioria de nossos usuários é fã de Pokémon desde o desenho e costuma jogar Pokémon Go com frequência. 
+Os jogadores casuais e que têm algumas dúvidas sobre o funcionamento do jogo, representam quase 30% da nossa base. 
+Também identificamos uma quantidade razoável (18.5%) de usuários em potencial, que demonstram interesse no jogo.
+
+### 2.3 Histórias
+Escolhemos 3 (três) histórias diferentes para atingir o máximo de usuários possível:
+
+:writing_hand:	**História de Usuário #1**
+
+_Flávia Machado_
+
+![](/src/img/readme-img/persona1-flavia.png "Persona 1 Flávia")
+
+Flávia é uma fã de carteirinha de Pokémon. Seu maior objetivo é descobrir as chances de _spawn_ de Pokémons Raros. Ela precisa de um site que mostre a raridade de cada Pokémon.
+
+:writing_hand:	**História de Usuário #2**
+
+_Eduardo Silva_
+
+![](/src/img/readme-img/persona2-eduardo.png "Persona 2 Eduardo")
+
+Eduardo tem bastante interesse no jogo mas não sabe nada sobre ele. Sua maior necessidade é obter informações rápidas sobre os Pokémons. Ele precisa de um site que mostre dados como tipo, força e spawn, de forma intuitva como em um card.
+
+:writing_hand:	**História de Usuário #3**
+
+_Marcelo Santos_
+
+![](/src/img/readme-img/persona3-marcelo.png "Persona 3 Marcelo")
+
+Marcelo é fã do desenho, mas nunca jogou Pokémon Go. Ele tem muita dificuldade em escolher o melhor tipo de Pokémon antes das batalhas.
+Precisa de um site responsivo, para escolher o melhor momentos antes de entrar na guerra.
+Acreditamos que isso pode ser resolvido com um site responsivo e que possibilite uma comparação rápida entre os tipos de Pokémons.
 ## 3. Objetivos de aprendizagem
 
 O objetivo principal de aprendizagem deste projeto é construir uma [Single-page

@@ -1,3 +1,6 @@
+import { logOut } from '../../services/index.js';
+import { onNavigate } from '../../utils/history.js';
+
 export const Post = () => {
   const post = document.createElement('div');
   post.classList.add('div-post');
@@ -8,6 +11,7 @@ export const Post = () => {
     <input class="menu-btn" type="checkbox" id="menu-btn" />
     <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
     <ul class="menu">
+      <li id='profile'><a href="#">Perfil</a></li>
       <li id='logOut'><a href="#">Sair</a></li>
     </ul>
   </header>
@@ -69,7 +73,7 @@ export const Post = () => {
         });
       })
       .catch((error) => {
-        console.log('Error getting documents: ', error);
+        alert('Error getting documents: ', error);
       });
   };
 
@@ -77,6 +81,22 @@ export const Post = () => {
     e.preventDefault();
     creatPost();
     obtainPost();
+  });
+
+  const ppost = post.querySelector('#profile');
+  ppost.addEventListener('click', () => {
+    onNavigate('/profile');
+  });
+  const leave = post.querySelector('#logOut');
+  leave.addEventListener('click', () => {
+    logOut()
+      .then(() => {
+        onNavigate('/');
+      })
+      .catch(() => {
+        const error = 'Não conseguimos deslogar, por gentileza tentar novamente';
+        alert(error);
+      });
   });
 
   return post;
